@@ -1,293 +1,129 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tips & Bling | Luxury Handmade Press-On Nails</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Tips & Bling | Luxury Press-On Nails</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#fdf8f6',
-                            100: '#fbeee9',
-                            200: '#f5dcd3',
-                            600: '#b85d43',
-                            700: '#9c4a33',
-                            800: '#813d29',
-                            900: '#6a3222',
-                        }
-                    },
-                    fontFamily: {
-                        serif: ['"Playfair Display"', 'serif'],
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-brand-50 text-neutral-800 font-sans antialiased selection:bg-brand-200">
+<body class="bg-[#fdf8f6] text-neutral-800 font-['Plus_Jakarta_Sans',sans-serif]">
 
-    <!-- Announcement Bar -->
-    <div class="bg-brand-800 text-brand-50 text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide">
-        ✨ Free Shipping Across Pakistan on Orders Over Rs. 2,500 | Handcrafted Luxury Press-On Nails ✨
-    </div>
-
-    <!-- Navigation Header -->
-    <header class="sticky top-0 z-40 bg-brand-50/95 backdrop-blur-md border-b border-brand-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <button id="menu-btn" class="text-neutral-800 focus:outline-none md:hidden p-2">
-                <i class="fa-solid fa-bars text-xl"></i>
-            </button>
-            <div class="flex items-center gap-2">
-                <h1 class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-brand-900 text-center">TIPS & BLING</h1>
-            </div>
-            <div class="flex items-center gap-4">
-                <button onclick="toggleBag()" class="relative p-2 text-neutral-800 hover:text-brand-700 transition">
-                    <i class="fa-solid fa-bag-shopping text-xl"></i>
-                    <span id="bag-count" class="absolute -top-1 -right-1 bg-brand-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">0</span>
-                </button>
-            </div>
-        </div>
+    <!-- Header -->
+    <header class="bg-white border-b border-[#f5dcd3] sticky top-0 z-40 py-4 px-6 flex items-center justify-between shadow-sm">
+        <h1 class="font-['Playfair_Display',serif] text-2xl font-bold tracking-wider text-[#6a3222]">TIPS & BLING</h1>
+        <button onclick="toggleBag()" class="relative text-[#6a3222] p-2">
+            <i class="fa-solid fa-bag-shopping text-xl"></i>
+            <span id="bag-count" class="absolute -top-1 -right-1 bg-[#b85d43] text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">0</span>
+        </button>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        <div class="flex-1 text-center md:text-left space-y-6">
-            <span class="inline-block bg-brand-100 text-brand-800 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full tracking-widest uppercase">Handmade Perfection</span>
-            <h2 class="font-serif text-4xl sm:text-6xl font-bold text-neutral-900 leading-tight">
-                Salon Quality Nails, <br><span class="italic font-normal text-brand-700">Instantly Yours.</span>
-            </h2>
-            <p class="text-neutral-600 text-base sm:text-lg max-w-xl mx-auto md:mx-0">
-                Discover our exclusive range of handcrafted cat-eye finishes, chrome sheens, 3D florals, and luxurious custom press-ons designed to elevate your everyday elegance.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-2">
-                <a href="#collection" class="w-full sm:w-auto bg-brand-700 hover:bg-brand-800 text-white font-medium px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition text-center">
-                    Explore Collection (36 Sets)
-                </a>
-                <a href="#sizing" class="w-full sm:w-auto border border-neutral-400 hover:border-brand-700 text-neutral-800 hover:text-brand-700 font-medium px-8 py-3.5 rounded-full transition text-center">
-                    Find Your Size
-                </a>
-            </div>
-        </div>
-        <div class="flex-1 w-full max-w-md md:max-w-none">
-            <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5]">
-                <img src="IMG_6418.jpeg" alt="Luxury Press On Nails" class="w-full h-full object-cover">
-            </div>
-        </div>
+    <!-- Hero -->
+    <section class="max-w-4xl mx-auto px-6 py-12 text-center">
+        <span class="bg-[#fbeee9] text-[#813d29] text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">Handcrafted Luxury</span>
+        <h2 class="font-['Playfair_Display',serif] text-4xl sm:text-5xl font-bold text-neutral-900 mt-4">Salon Quality Nails, Instantly Yours.</h2>
+        <p class="text-neutral-600 mt-3 text-sm sm:text-base">Explore our stunning press-on nail collection designed for effortless elegance.</p>
     </section>
 
-    <!-- Collection Grid -->
-    <section id="collection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="flex flex-col md:flex-row items-center justify-between mb-10 gap-4">
+    <!-- Products -->
+    <main class="max-w-6xl mx-auto px-6 pb-20">
+        <h3 class="font-['Playfair_Display',serif] text-2xl font-bold text-neutral-900 mb-6">Signature Sets</h3>
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Products Loaded Here -->
+        </div>
+    </main>
+
+    <!-- Cart Drawer -->
+    <div id="bag-drawer" class="fixed inset-0 bg-black/50 hidden flex justify-end z-50">
+        <div class="bg-white w-full max-w-md h-full p-6 flex flex-col justify-between">
             <div>
-                <h3 class="font-serif text-3xl font-bold text-neutral-900">The Signature Collection</h3>
-                <p class="text-neutral-600 text-sm mt-1">Handcrafted with premium gel, secure layers, and stunning detail.</p>
-            </div>
-            <!-- Search & Filter -->
-            <div class="w-full md:w-72">
-                <input type="text" id="search-input" placeholder="Search nail sets..." onkeyup="filterProducts()" class="w-full px-4 py-2.5 rounded-full border border-brand-200 bg-white focus:outline-none focus:border-brand-600 text-sm">
-            </div>
-        </div>
-
-        <!-- Product Grid Container -->
-        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Products injected by script -->
-        </div>
-    </section>
-
-    <!-- Sizing Guide Section -->
-    <section id="sizing" class="bg-brand-100/60 py-16 px-4 sm:px-6 lg:px-8 border-y border-brand-200 mt-12">
-        <div class="max-w-4xl mx-auto text-center space-y-6">
-            <h3 class="font-serif text-3xl font-bold text-neutral-900">How to Find Your Nail Size</h3>
-            <p class="text-neutral-600 max-w-xl mx-auto">Use a piece of tape across the widest part of your natural nail, measure the millimeters with a ruler, and match to our sizing guide below!</p>
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-200">
-                    <span class="block font-bold text-lg text-brand-800">XS</span>
-                    <span class="text-xs text-neutral-500">14mm, 10mm, 11mm, 10mm, 8mm</span>
+                <div class="flex justify-between items-center pb-4 border-b">
+                    <h4 class="font-['Playfair_Display',serif] text-xl font-bold">Your Bag</h4>
+                    <button onclick="toggleBag()" class="text-xl font-bold">&times;</button>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-200">
-                    <span class="block font-bold text-lg text-brand-800">S</span>
-                    <span class="text-xs text-neutral-500">15mm, 11mm, 12mm, 11mm, 9mm</span>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-200">
-                    <span class="block font-bold text-lg text-brand-800">M</span>
-                    <span class="text-xs text-neutral-500">16mm, 12mm, 13mm, 12mm, 10mm</span>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-200">
-                    <span class="block font-bold text-lg text-brand-800">L</span>
-                    <span class="text-xs text-neutral-500">18mm, 13mm, 14mm, 13mm, 11mm</span>
-                </div>
+                <div id="bag-items" class="py-4 space-y-3 overflow-y-auto max-h-[60vh]"></div>
             </div>
-            <p class="text-xs text-neutral-500 pt-2">Custom sizing available! Just message us your exact millimeter measurements on WhatsApp when checking out.</p>
-        </div>
-    </section>
-
-    <!-- Shopping Bag Drawer -->
-    <div id="bag-drawer" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex justify-end">
-        <div class="bg-brand-50 w-full max-w-md h-full shadow-2xl flex flex-col p-6 overflow-y-auto">
-            <div class="flex items-center justify-between pb-4 border-b border-brand-200">
-                <h4 class="font-serif text-xl font-bold text-neutral-900">Your Shopping Bag</h4>
-                <button onclick="toggleBag()" class="text-neutral-500 hover:text-neutral-900 p-2"><i class="fa-solid fa-xmark text-xl"></i></button>
-            </div>
-            <div id="bag-items" class="flex-1 py-6 space-y-4 overflow-y-auto">
-                <!-- Bag items injected here -->
-            </div>
-            <div class="pt-4 border-t border-brand-200 space-y-4">
-                <div class="flex justify-between font-bold text-lg text-neutral-900">
+            <div class="border-t pt-4 space-y-3">
+                <div class="flex justify-between font-bold text-lg">
                     <span>Total:</span>
                     <span id="bag-total">Rs. 0</span>
                 </div>
-                <button onclick="checkoutWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                <button onclick="checkoutWhatsApp()" class="w-full bg-emerald-600 text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2">
                     <i class="fa-brands fa-whatsapp text-xl"></i> Order via WhatsApp
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-neutral-900 text-brand-50 py-12 px-4 sm:px-6 lg:px-8 mt-20">
-        <div class="max-w-7xl mx-auto text-center space-y-4">
-            <h2 class="font-serif text-2xl tracking-wider">TIPS & BLING</h2>
-            <p class="text-xs text-neutral-400">Luxury handmade press-on nails delivered across Pakistan.</p>
-            <p class="text-xs text-neutral-500 pt-4">&copy; 2026 Tips & Bling. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Script to render 36 sets and manage cart -->
     <script>
-        // List of uploaded images to cycle through your real inventory photos
-        const userImages = [
-            'IMG_6392.png', 'IMG_6394.png', 'IMG_6395.png', 'IMG_6396.png', 
-            'IMG_6397.png', 'IMG_6398.png', 'IMG_6399.png', 'IMG_6418.jpeg', 'IMG_6419.jpeg'
-        ];
-
-        const nailStyles = [
-            "Peach Pink Cateye Chrome Floral", "Velvet Burgundy Shimmer", "Midnight Black Glossy Almond",
-            "Milky White French Tip", "Rose Gold Holographic Sparkle", "Emerald Green Cat-Eye",
-            "Latte Abstract Swirls", "Classic Red Glossy Stiletto", "Lavender Glazed Donut",
-            "Soft Nude Pearl Accent", "Chic Tortoiseshell Coffin", "Baby Blue Chrome Sparkle",
-            "Ruby Red Velvet Shimmer", "Champagne Gold Glitter Fade", "Minimalist Black Line Art",
-            "Sage Green Botanical Vibe", "Sunset Orange Chrome", "Matte Mocha Chic",
-            "Pearl White Aura Effect", "Hot Pink Barbie Shimmer", "Silver Magnetic Cat-Eye",
-            "Toasted Almond Ombre", "Deep Plum Royal Polish", "Pastel Yellow Daisy Art",
-            "Clear Glassy Jelly Base", "Duochrome Cosmic Shift", "Burgundy French Tip",
-            "Metallic Copper Shine", "Ice Blue Frost Sparkle", "Coral Peach Summer Glow",
-            "Teal Ocean Shimmer", "Oatmeal Neutral Minimal", "Berry Wine Glossy",
-            "Starlight Silver Glitter", "Electric Purple Cat-Eye", "Signature Luxury Naked"
+        // Uses your actual uploaded images from GitHub
+        const images = ['IMG_6392.png', 'IMG_6394.png', 'IMG_6395.png', 'IMG_6396.png', 'IMG_6397.png', 'IMG_6398.png', 'IMG_6399.png', 'IMG_6418.jpeg', 'IMG_6419.jpeg'];
+        const names = [
+            "Peach Pink Cateye Chrome", "Velvet Burgundy Shimmer", "Midnight Black Glossy Almond",
+            "Milky White French Tip", "Rose Gold Holographic", "Emerald Green Cat-Eye",
+            "Latte Abstract Swirls", "Classic Red Glossy Stiletto", "Lavender Glazed Donut"
         ];
 
         let products = [];
-        for(let i = 0; i < 36; i++) {
+        for(let i = 0; i < 9; i++) {
             products.push({
                 id: i + 1,
-                name: `${i+1}pc ${nailStyles[i % nailStyles.length]}`,
-                price: 650 + ((i % 4) * 100),
-                image: userImages[i % userImages.length],
-                tag: i === 0 ? "NEW" : (i % 5 === 0 ? "BESTSELLER" : "")
+                name: names[i],
+                price: 650 + (i * 50),
+                image: images[i]
             });
         }
 
         let bag = [];
 
-        function renderProducts(items) {
-            const grid = document.getElementById('product-grid');
-            grid.innerHTML = items.map(p => `
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-brand-200 flex flex-col">
-                    <div class="relative aspect-square bg-neutral-100 overflow-hidden">
+        function renderProducts() {
+            document.getElementById('product-grid').innerHTML = products.map(p => `
+                <div class="bg-white rounded-2xl overflow-hidden border border-[#f5dcd3] shadow-sm flex flex-col">
+                    <div class="aspect-square bg-neutral-100">
                         <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover">
-                        ${p.tag ? `<span class="absolute top-3 left-3 bg-brand-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">${p.tag}</span>` : ''}
                     </div>
-                    <div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+                    <div class="p-4 flex flex-col flex-1 justify-between">
                         <div>
-                            <h4 class="font-serif font-bold text-neutral-900 text-lg">${p.name}</h4>
-                            <p class="text-brand-700 font-bold mt-1">Rs. ${p.price}</p>
+                            <h5 class="font-['Playfair_Display',serif] font-bold text-lg text-neutral-900">${p.name}</h5>
+                            <p class="text-[#9c4a33] font-bold mt-1">Rs. ${p.price}</p>
                         </div>
-                        <button onclick="addToBag(${p.id})" class="w-full bg-brand-700 hover:bg-brand-800 text-white py-2.5 rounded-xl text-sm font-medium transition flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-bag-shopping"></i> Add to Bag
-                        </button>
+                        <button onclick="addToBag(${p.id})" class="mt-4 w-full bg-[#9c4a33] text-white py-2.5 rounded-xl text-sm font-medium">Add to Bag</button>
                     </div>
                 </div>
             `).join('');
         }
 
-        function filterProducts() {
-            const query = document.getElementById('search-input').value.toLowerCase();
-            const filtered = products.filter(p => p.name.toLowerCase().includes(query));
-            renderProducts(filtered);
-        }
-
         function toggleBag() {
-            const drawer = document.getElementById('bag-drawer');
-            drawer.classList.toggle('hidden');
+            document.getElementById('bag-drawer').classList.toggle('hidden');
         }
 
         function addToBag(id) {
-            const product = products.find(p => p.id === id);
-            bag.push(product);
-            updateBagUI();
+            bag.push(products.find(p => p.id === id));
+            document.getElementById('bag-count').innerText = bag.length;
+            updateBag();
             toggleBag();
         }
 
-        function removeFromBag(index) {
-            bag.splice(index, 1);
-            updateBagUI();
-        }
-
-        function updateBagUI() {
-            document.getElementById('bag-count').innerText = bag.length;
-            const container = document.getElementById('bag-items');
+        function updateBag() {
             let total = 0;
-
-            if(bag.length === 0) {
-                container.innerHTML = `<p class="text-neutral-500 text-center py-10">Your bag is currently empty.</p>`;
-            } else {
-                container.innerHTML = bag.map((item, idx) => {
-                    total += item.price;
-                    return `
-                        <div class="flex items-center justify-between bg-white p-3 rounded-xl border border-brand-200">
-                            <div class="flex items-center gap-3">
-                                <img src="${item.image}" class="w-12 h-12 rounded-lg object-cover">
-                                <div>
-                                    <h5 class="text-sm font-bold text-neutral-800">${item.name}</h5>
-                                    <p class="text-xs text-brand-700">Rs. ${item.price}</p>
-                                </div>
-                            </div>
-                            <button onclick="removeFromBag(${idx})" class="text-neutral-400 hover:text-red-500 p-2"><i class="fa-solid fa-trash-can text-sm"></i></button>
-                        </div>
-                    `;
-                }).join('');
-            }
+            document.getElementById('bag-items').innerHTML = bag.map(item => {
+                total += item.price;
+                return `<div class="flex justify-between items-center text-sm"><span>${item.name}</span><span class="font-bold">Rs. ${item.price}</span></div>`;
+            }).join('');
             document.getElementById('bag-total').innerText = `Rs. ${total}`;
         }
 
         function checkoutWhatsApp() {
-            if(bag.length === 0) {
-                alert("Please add items to your bag first!");
-                return;
-            }
-            let message = "Hi! I would like to order the following press-on nail sets from Tips & Bling:%0A%0A";
+            if(bag.length === 0) return alert("Your bag is empty!");
+            let msg = "Hi! I want to order:%0A";
             let total = 0;
-            bag.forEach((item, index) => {
-                message += `${index + 1}. ${item.name} - Rs. ${item.price}%0A`;
-                total += item.price;
-            });
-            message += `%0ATotal: Rs. ${total}%0A%0APlease let me know the next steps for delivery across Pakistan!`;
-            
-            // Replace with your actual WhatsApp number including country code (e.g., 923001234567)
-            const whatsappUrl = `https://wa.me/923000000000?text=${message}`;
-            window.open(whatsappUrl, '_blank');
+            bag.forEach(i => { msg += `- ${i.name} (Rs. ${i.price})%0A`; total += i.price; });
+            msg += `%0ATotal: Rs. ${total}`;
+            window.open(`https://wa.me/923000000000?text=${msg}`, '_blank');
         }
 
-        renderProducts(products);
+        renderProducts();
     </script>
 </body>
 </html>
